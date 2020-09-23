@@ -25,7 +25,7 @@ public class TabServlet extends HttpServlet {
         // 第一页
         int index = Integer.parseInt(indexStr);
         // 一页几条数据
-        int size = 5;
+        int size = 6;
 
 //        1-1~4，2-5~8，3-9~12，4-13~16
 
