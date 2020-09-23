@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body>
+
+        <div class="panel panel-success login">
+            <div class="panel-heading">用户登录</div>
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <label for="name">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 账号
+                        </label>
+                        <input type="text" class="form-control" id="name" v-model="name" placeholder="请输入账号">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">
+                            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span> 密码
+                        </label>
+                        <input type="password" class="form-control" id="pwd" v-model="pwd" placeholder="请输入密码">
+                    </div>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="user_type" v-model="user_type" value="1"> 员工
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="user_type" v-model="user_type" value="0"> 管理员
+                    </label><br/>
+                    <center>
+                        <button type="button" class="btn btn-default" @click="doLogin(this)">登录</button>
+                    </center>
+
+                </form>
+            </div>
+        </div>
+
+    <script src="plugins/jq/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/vue/vue.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+</html>
